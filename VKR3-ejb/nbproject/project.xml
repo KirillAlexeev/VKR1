@@ -7,6 +7,8 @@
             <minimum-ant-version>1.6.5</minimum-ant-version>
             <included-library dirs="200">file.reference.JavaLibrary4.jar</included-library>
             <included-library dirs="200">file.reference.LabelLibEJB.jar</included-library>
+            <included-library dirs="200">reference.JavaLibrary4.jar</included-library>
+            <included-library dirs="200">reference.LabelLibEJB.jar</included-library>
             <source-roots>
                 <root id="src.dir" name="Пакеты исходных кодов"/>
             </source-roots>
@@ -14,6 +16,23 @@
                 <root id="test.src.dir" name="Тесты"/>
             </test-roots>
         </data>
-        <references xmlns="http://www.netbeans.org/ns/ant-project-references/1"/>
+        <references xmlns="http://www.netbeans.org/ns/ant-project-references/1">
+            <reference>
+                <foreign-project>JavaLibrary4</foreign-project>
+                <artifact-type>jar</artifact-type>
+                <script>build.xml</script>
+                <target>jar</target>
+                <clean-target>clean</clean-target>
+                <id>jar</id>
+            </reference>
+            <reference>
+                <foreign-project>LabelLibEJB</foreign-project>
+                <artifact-type>jar</artifact-type>
+                <script>build.xml</script>
+                <target>jar</target>
+                <clean-target>clean</clean-target>
+                <id>jar</id>
+            </reference>
+        </references>
     </configuration>
 </project>
