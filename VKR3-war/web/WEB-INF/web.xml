@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>PartnumberCheck</servlet-name>
+        <servlet-class>Servlets.PartnumberCheck</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MainPage</servlet-name>
+        <servlet-class>Servlets.MainPage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LabelSelect</servlet-name>
+        <servlet-class>Servlets.LabelSelect</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewPartNumber</servlet-name>
+        <servlet-class>Servlets.NewPartNumber</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PartnumberCheck</servlet-name>
+        <url-pattern>/PartnumberCheck</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MainPage</servlet-name>
+        <url-pattern>/MainPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LabelSelect</servlet-name>
+        <url-pattern>/LabelSelect</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewPartNumber</servlet-name>
+        <url-pattern>/NewPartNumber</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
